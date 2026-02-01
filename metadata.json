@@ -1,0 +1,45 @@
+{
+  "id": 11298,
+  "title": "AI-Powered Content Factory: RSS to Blog, Instagram & TikTok with Slack Approval",
+  "slug": "ai-powered-content-factory-rss-to-blog-instagram-tiktok-with-slack-approval-11298",
+  "description": "This workflow automates the daily content creation process by monitoring trends,generating drafts for multiple platforms using AI, and requiring human approvalbefore saving.It acts as an autonomous \"AI Content Factory\" that turns raw news into polishedcontent for SEO Blogs, Instagram, and TikTok/Reels.HOW IT WORKS 1. Trend Monitoring: Fetches the latest trend data via RSS (e.g., Google News or Google Trends). 2. AI Filtering: An AI Agent acts as an \"Editor-in-Chief,\" selecting only the most viral-worthy topics relevant to your niche. 3. Multi-Format Generation: Three specialized AI Agents (using gpt-4o-mini for cost efficiency) run in parallel to generate: * An SEO-optimized Blog post structure. * An Instagram Carousel plan (5 slides). * A Short Video Script (TikTok/Reels). 4. Human-in-the-Loop: Sends a formatted message with interactive buttons to Slack. The workflow waits for your decision. 5. Final Storage: If approved, the content is automatically appended to Google Sheets.WHO IS THIS FOR * Social Media Managers & Content Creators * Marketing Agencies managing multiple accounts * Anyone wanting to automate \"research to draft\" without losing quality control.REQUIREMENTS * n8n: Version 1.19.0+ (requires AI Agent nodes). * OpenAI: API Key (works great with low-cost gpt-4o-mini). * Slack: A workspace to receive notifications. * Google Sheets: To store the approved content.HOW TO SET UP 1. Configure Credentials: Set up your OpenAI, Slack, and Google Sheets credentials. 2. Slack App: Create a Slack App, enable \"Interactivity,\" and set the Request URL to your n8n Production Webhook URL. Add the chat:write scope and install it to your workspace. 3. Google Sheet: Create a sheet with columns for Blog, Instagram, and Script (row 1 as headers). 4. RSS Feed: Change the RSS node URL to your preferred topic source.",
+  "metadescription": "Automate content creation for blogs & social media with trend-tracking AI, multi-format drafts, human approval, and easy integration. Learn more today!",
+  "summary": "Automates daily content creation by tracking trending topics via RSS feeds.  \nAn AI “Editor-in-Chief” filters for the most viral, niche-relevant stories.  \nThree specialized AI agents draft an SEO blog outline, Instagram carousel (5 slides), and TikTok/Reels script—simultaneously and cost-effectively.  \nSlack delivers interactive notifications for human approval before anything is saved.  \nApproved content is stored directly in Google Sheets for seamless workflow.  \nIdeal for social media managers, agencies, and content creators seeking streamlined, high-quality, automated content drafts without sacrificing editorial control.  \nSimple setup integrates OpenAI, Slack, Google Sheets, and customizable RSS sources.",
+  "date": "27 Nov 2025",
+  "createdAtRaw": "2025-11-27T14:25:40.67+00:00",
+  "categories": [
+    "Content Creation",
+    "Multimodal AI"
+  ],
+  "nodeTypes": [
+    "n8n-nodes-base.if",
+    "n8n-nodes-base.set",
+    "n8n-nodes-base.code",
+    "n8n-nodes-base.wait",
+    "n8n-nodes-base.merge",
+    "n8n-nodes-base.slack",
+    "n8n-nodes-base.stickyNote",
+    "n8n-nodes-base.httpRequest",
+    "n8n-nodes-base.googleSheets",
+    "@n8n/n8n-nodes-langchain.agent",
+    "n8n-nodes-base.scheduleTrigger",
+    "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+    "@n8n/n8n-nodes-langchain.outputParserStructured"
+  ],
+  "author": {
+    "name": "Miki Arai",
+    "username": "mikia-n8n",
+    "avatar": "https://gravatar.com/avatar/7ea0549f85a80dc7dadfeb70f3c2be0d8acf8f8b84f105c0af3c4423d18b0f81?r=pg&d=retro&size=200",
+    "verified": true
+  },
+  "popularity": 391,
+  "visitors": 1739,
+  "inserters": 554,
+  "templateUrl": "https://n8n.io/workflows/11298",
+  "readme": "",
+  "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/11298-ai-powered-content-factory--rss-to-blog--instagram---tiktok-with-slack-approval.webp",
+  "complexityLevel": "advanced",
+  "templateData": null,
+  "price": 0,
+  "referalUrl": null
+}
